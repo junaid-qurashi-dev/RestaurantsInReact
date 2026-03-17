@@ -11,7 +11,8 @@ function Section1() {
             <Col lg={7} className="mb-5 mb-lg-0">
               <div className="position-relative">
                 <img src={Burger} className="img-fluid" alt="Hero" />
-                <div className="price_badge">
+
+                    <div className="price_badge">
                   <div className="badge_text">
                     <h4 className="h4_xs">Only</h4>
                     <h4 className="h3_lg">$6.99</h4>

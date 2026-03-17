@@ -1,0 +1,241 @@
+/* About Page Styles */
+
+/* About Hero Section */
+.about-hero {
+  position: relative;
+  background: url("../assets/new/res4.jpg") no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+  color: var(--white);
+  text-align: center;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-family: var(--oswald-font);
+  font-size: 4rem;
+  line-height: 1;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+
+.about-hero p {
+  font-size: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* About Content Section */
+.about-content {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.about-content .container {
+  max-width: 1700px;
+}
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.about-story img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-story-content h2 {
+  font-size: 2.5rem;
+  color: var(--light-red);
+  margin-bottom: 20px;
+  font-family: var(--lilita-font);
+}
+
+.about-story-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--grey);
+  margin-bottom: 20px;
+}
+
+.about-stats {
+  background: url("../assets/new/res6.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-stats .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.stat-item {
+  background: var(--white);
+  height: 300px;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item .stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--light-red);
+  font-family: var(--lilita-font);
+  margin-bottom: 10px;
+}
+
+.stat-item .stat-title {
+  font-size: 1.2rem;
+  color: var(--light-black);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.stat-item p {
+  color: var(--grey);
+  margin-top: 10px;
+}
+
+/* About Features */
+.about-features {
+  padding: 80px 0;
+  background: var(--white);
+}
+
+.about-features h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--light-red);
+  margin-bottom: 60px;
+  font-family: var(--lilita-font);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--light-grey);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item .feature-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item .feature-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  color: var(--light-black);
+  margin-bottom: 15px;
+  font-family: var(--oswald-font);
+}
+
+.feature-item p {
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+/* About Mission */
+.about-mission {
+  padding: 80px 0;
+  background: url("../assets/new/res9.jpg") no-repeat center center;
+  background-size: cover;
+  /* height: 600px; */
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+  position: relative;
+  color: var(--white);
+  text-align: center;
+}
+
+.about-mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: var(--lilita-font);
+}
+
+.about-mission p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 3rem;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-stats .container {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}

@@ -89,7 +89,7 @@ function Footer() {
                 <ul className="list-unstyled text-center mb-0">
                   <li>
                     <Link to="/">
-                      &copy; 2026 <span>CodingClub</span>. All Rights Reserved.
+                      &copy; 2026 <span>JunaidDevX</span>. All Rights Reserved.
                     </Link>
                   </li>
                   <li>
